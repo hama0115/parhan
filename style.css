@@ -64,6 +64,15 @@ h3, .sidebar h3 {
 	border-radius: 10px;
 }
 
+/*
+.body {
+	margin-bottom: 0;
+}
+*/
+.main {
+	padding: 19px 29px;
+}
+
 
 /*-- ヘッダー --*/
 
@@ -144,17 +153,6 @@ padding: 10px 0;
 	background-color: #f3f3f3;
 }
 
-/* 投稿日時、更新日時 */
-
-.fa-calendar {
-	color: #0bd;
-}
-
-.fa-pen-fancy {
-	color: #0bd;	
-}
-
-/* ページネーション */
 .pagination-next-link, .comment-btn {
 	background-color: #87cefa;
 	color: #fff;
@@ -184,11 +182,31 @@ padding: 10px 0;
 
 /* 個別投稿ページ */
 
+.breadcrumb {
+	margin: 0;
+	padding: 2em 40px;
+	background-color: #fff;
+	border-radius: 10px 10px 0 0 ;
+}
+
+.article {
+	margin-bottom: 0;
+	padding: 10px 40px 40px 40px;
+	background-color: #fff;
+	border-radius: 0 0 10px 10px;
+}
+
 .article h2 {
   padding: 0.25em 0.5em;
   color: #000;
   background: transparent;
   border-left: solid 5px #f7e160;
+}
+
+.under-entry-content {
+	padding: 20px 40px;
+	background-color: #fff;
+	border-radius: 10px;
 }
 
 /*-- サイドバー --*/
@@ -267,6 +285,23 @@ padding: 10px 0;
 /*834px以下*/
 @media screen and (max-width: 834px){
   /*必要ならばここにコードを書く*/
+	
+	/*-- 全体 --*/
+	main.main {
+		margin-bottom: 0;
+		padding: 0 12px;
+	}
+	
+	#list {
+		margin-bottom: 0;
+	}
+	
+	/*-- ヘッダー --*/
+	.logo-header {
+		display: none;
+	}
+	
+	/*-- アーカイブページ --*/
 	
 	.entry-card {
 		display: block;
